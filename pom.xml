@@ -21,6 +21,22 @@
 			<version>${spring.version}</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.8.1</version>
+</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.maven/maven-artifact -->
+<dependency>
+    <groupId>org.apache.maven</groupId>
+    <artifactId>maven-artifact</artifactId>
+    <version>3.6.3</version>
+</dependency>
+
+		
+		
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
@@ -53,6 +69,18 @@
 					</webApp>
 				</configuration>
 			</plugin>
+			
+			
+			<finalName>SpringMVC</finalName>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -72,18 +100,6 @@
 			
 		</plugins>
 	</build>
-	<distributionManagement>
-<repository>
-<id>release</id>
-<name>Release</name>
-<url>http://3.133.147.79:8081/repository/release/</url>
-
-</repository>
-<snapshotRepository>
-<id>snapshot</id>
-<name>Snapshot</name>
-<url>http://3.133.147.79:8081/repository/snapshot/</url>
-</snapshotRepository>
-</distributionManagement>
+	
 
 </project>
