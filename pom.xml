@@ -71,7 +71,7 @@
 			</plugin>
 			
 			
-			<finalName>SpringMVC</finalName>
+			
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
